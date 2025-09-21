@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Ti</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #e91e63;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.2em;
+      color: #444;
+    }
+    .flowers {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .flowers img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .flowers img:hover {
+      transform: scale(1.05);
+    }
+    /* Estilo para el texto animado */
+    #nombre {
+      border-right: 3px solid #e91e63;
+      display: inline-block;
+      padding-right: 5px;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Para <span id="nombre"></span> 💖</h1>
+  <p>Un regalo lleno de flores para ti Sandoval🌹🌼🌸</p>
+
+  <div class="flowers">
+    <img src="https://source.unsplash.com/400x400/?rose" alt="Rosa">
+    <img src="https://source.unsplash.com/400x400/?flowers" alt="Flores">
+    <img src="https://source.unsplash.com/400x400/?tulip" alt="Tulipán">
+    <img src="https://source.unsplash.com/400x400/?daisy" alt="Margarita">
+    <img src="https://source.unsplash.com/400x400/?sunflower" alt="Girasol">
+    <img src="https://source.unsplash.com/400x400/?orchid" alt="Orquídea">
+  </div>
+
+  <script>
+    // 👉 Aquí pones el nombre de la persona
+    const texto = "Sajani";
+    let i = 0;
+    const velocidad = 150; // velocidad de escritura en milisegundos
+    function
